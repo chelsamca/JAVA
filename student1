@@ -1,0 +1,40 @@
+package student2;
+
+
+public class Student2 
+{
+ int m1,m2,m3;
+Student2(int a,int b,int c)
+  {
+        m1=a;
+        m2=b;
+        m3=c;
+    }
+    public void sum()
+    {
+        int sum=m1+m2+m3;
+        System.out.println("sum is"+sum);
+    }
+    public void percentage()
+    {
+        int sum=m1+m2+m3;
+        
+        float percentage=( sum/300)*100;
+        System.out.println("percentage is"+percentage);
+    }
+    
+    
+
+   
+    public static void main(String[] args) {
+        Student2 s1= new Student2(10,20,30);
+        Student2 s2= new Student2(30,20,12);
+        s1.sum();
+        s1.percentage();
+        s2.sum();
+        s2.percentage();
+        
+    }
+    
+}
+
