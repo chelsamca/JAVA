@@ -1,0 +1,94 @@
+Graphics.java
+
+package graphics;
+
+import java.util.Scanner;
+public class Graphics {
+
+   
+    public static void main(String[] args) {
+   
+       double l,b,b1,h,r,a;
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the length and breadth of rectangle");
+       l=sc.nextDouble();
+       b=sc.nextDouble();
+       
+       System.out.println("Enter the base and height of triangle");
+       b1=sc.nextDouble();
+       h=sc.nextDouble();
+       
+       System.out.println("Enter the  side square");
+       a=sc.nextDouble();
+       
+       System.out.println("Enter the  radius of circle");
+       r=sc.nextDouble();
+       
+       
+       Rectangle r1=new Rectangle();
+       r1.area(l, b);
+       
+       Triangle t1=new Triangle();
+       t1.area(b, h);
+       
+       Square s1=new Square();
+       s1.area(a);
+       
+       Circle c1=new Circle();
+       c1.area(r);
+       
+       
+    }
+   
+}
+
+
+
+
+
+Rectangle.java
+
+package graphics;
+
+public class Rectangle {
+    
+    public void area(double l,double b){
+        System.out.println("Area of rectangle:"+(l*b));
+    }
+    
+}
+
+Triangle.java
+
+package graphics;
+
+public class Triangle {
+     public void area(double b,double h){
+        System.out.println("Area of triangle:"+((b*h)/2));
+    }
+    
+}
+
+Circle.java
+
+package graphics;
+
+public class Circle {
+     public void area(double r){
+        System.out.println("Area of circle: "+Math.PI*(r*r));
+    }
+    
+}
+
+Square.java
+
+package graphics;
+
+public class Square {
+     public void area(double a){
+        System.out.println("Area of square:"+(4*a));
+    }
+    
+}
+
+
